@@ -31,7 +31,6 @@ export function Hero() {
   const scrollToTracks = () => {
     document.getElementById('tracks')?.scrollIntoView({ behavior: 'smooth' })
   }
-
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden">
       <div 
