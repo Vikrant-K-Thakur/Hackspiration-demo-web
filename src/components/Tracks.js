@@ -116,12 +116,11 @@ export function Tracks() {
             <Card
               key={track.title}
               ref={el => cardRefs.current[index] = el}
-              className={`group hover:border-cyan-400/50 transition-all duration-500 hover:-translate-y-3 cursor-pointer ${track.glowColor} border-white/20 hover:border-2 animate-on-scroll`}
+              className={`group hover:border-cyan-400/50 transition-all duration-500 hover:-translate-y-3 cursor-pointer ${track.glowColor} border-white/20 hover:border-2`}
               style={{
                 background: 'linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,242,255,0.05) 100%)',
                 backdropFilter: 'blur(20px)',
-                opacity: 0,
-                transform: 'translateY(50px)'
+                animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
               }}
             >
               <CardHeader>
